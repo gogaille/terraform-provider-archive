@@ -63,7 +63,7 @@ func TestZipArchiver_FileModified(t *testing.T) {
 
 	actualContents, err := ioutil.ReadFile(zipFilePath)
 	if err != nil {
-		t.Fatalf("unexpecte error: %s", err)
+		t.Fatalf("unexpected error: %s", err)
 	}
 
 	if !bytes.Equal(expectedContents, actualContents) {
